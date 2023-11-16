@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Sonido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('https://images.ctfassets.net/hrltx12pl8hq/5KiKmVEsCQPMNrbOE6w0Ot/341c573752bf35cb969e21fcd279d3f9/hero-img_copy.jpg?fit=fill&w=600&h=400'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #fff; /* Cambié el color del texto a blanco para que sea visible en la imagen de fondo */
+        }
+
+        h1 {
+            color: #fff; /* Cambié el color del título a blanco para que sea visible en la imagen de fondo */
+        }
+
+        audio {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para que el reproductor sea más legible */
+            padding: 10px;
+            border-radius: 8px; /* Bordes redondeados para un aspecto más agradable */
+        }
+    </style>
+</head>
+<body>
+    <h1>Malinche Radio</h1>
+    
+    <audio controls>
+        <source src="http://stream.zeno.fm/2aeez7zqhkhvv" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+</body>
+</html>
