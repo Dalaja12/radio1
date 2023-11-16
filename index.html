@@ -30,7 +30,8 @@
             background-color: rgba(255, 255, 255, 0.8);
             padding: 10px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregado para mejorar el estilo y la legibilidad en diferentes navegadores */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #000; /* Cambiado el color del texto a negro para mejorar la legibilidad en algunos casos */
         }
     </style>
 </head>
@@ -41,6 +42,17 @@
         <source src="http://stream.zeno.fm/2aeez7zqhkhvv" type="audio/mpeg">
         Tu navegador no soporta la etiqueta de audio.
     </audio>
+    
+    <script>
+        // Intentar reproducir automáticamente el audio al cargar la página (solo si es permitido por el navegador)
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.querySelector('audio');
+            audio.play().catch(function() {
+                // La reproducción automática falló, no hacer nada
+            });
+        });
+    </script>
 </body>
 </html>
+
 
